@@ -1,0 +1,1609 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fill1 {
+  0% {
+    transform: rotate(150deg);
+  }
+  100% {
+    transform: rotate(300deg);
+  }
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121d31;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px blueviolet;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: blueviolet;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: blueviolet;
+}
+
+#hed {
+  width: 100%;
+  height: 650px;
+  background-image: url("../Slike/Pozadina1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+header {
+  position: absolute;
+  height: 150px;
+  width: 100%;
+}
+
+.Menu-Ul {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: #01002c;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.Menu-Ul a {
+  color: blueviolet;
+  text-decoration: none;
+  font-size: 24pt;
+}
+.Menu-Ul ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.Menu-Ul li {
+  text-align: center;
+  list-style-type: none;
+  margin-left: 15px;
+  padding: 40px 10px 10px 10px;
+  line-height: 1.2em;
+}
+.Menu-Ul li:hover a {
+  text-decoration: underline;
+  transition-delay: 0.1s;
+}
+
+#I {
+  display: flex;
+  justify-content: center;
+}
+#I img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.BText {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+.BText h1 {
+  color: black;
+  font-size: 22pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+.typing-animation {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(40, end);
+}
+
+.cursor-animation {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 10px;
+  height: 30px;
+  background-color: black;
+  margin-left: 5px;
+  animation: blink 0.7s infinite;
+}
+
+#CV {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14%;
+}
+#CV h2 {
+  border: 1px solid rgb(240, 248, 255);
+  padding: 10px;
+  text-align: center;
+  font-size: 19pt;
+}
+#CV a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+#OCCUPATIONS {
+  width: 100%;
+  height: 500px;
+  background-color: #01002c;
+  background: linear-gradient(to bottom, #01002c, #93859f);
+}
+
+#Qualifications {
+  text-align: center;
+  color: aliceblue;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#Qualifications h1 {
+  font-size: 24pt;
+}
+#Qualifications h1::before {
+  content: "";
+  display: inline-block;
+  width: 10%;
+  height: 4px;
+  background-color: blueviolet;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+#Qualifications h1::after {
+  content: "";
+  display: inline-block;
+  width: 10%;
+  height: 4px;
+  background-color: blueviolet;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+.OCCU {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.OCCU1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgb(240, 248, 255);
+  padding: 10px;
+  width: 20%;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.OCCU1 i {
+  font-size: 50px;
+  border: 1px solid rgb(240, 248, 255);
+  background-color: aliceblue;
+  border-radius: 50%;
+  padding: 10px;
+  margin-top: -25px;
+}
+.OCCU1 h2 {
+  color: blueviolet;
+  padding-top: 15px;
+  font-size: 17pt;
+}
+.OCCU1 p {
+  width: 90%;
+  color: aliceblue;
+  padding-top: 15px;
+}
+
+#Projects {
+  width: 100%;
+  height: 800px;
+  background-image: url("../Slike/Pozadina2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#Projects img {
+  width: 450px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.AllP {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-link {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.image-link:hover .image {
+  filter: brightness(40%);
+}
+.image-link:hover .image-overlay {
+  opacity: 1;
+}
+
+.image {
+  display: block;
+  width: 200px;
+  transition: filter 0.3s ease-in-out;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-text {
+  color: aliceblue;
+  font-size: 17pt;
+  text-align: center;
+}
+
+#Skills {
+  height: 400px;
+  background-color: #01002c;
+  box-shadow: 0 0 15px 1px #4f0a57;
+  position: relative;
+}
+#Skills .SkillsFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+}
+#Skills .SkillsFlex .ALLS {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+#Skills .SkillsFlex .ALLS .progress1,
+#Skills .SkillsFlex .ALLS .progress2,
+#Skills .SkillsFlex .ALLS .progress3,
+#Skills .SkillsFlex .ALLS .progress4 {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  border-radius: 50%;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Skills .SkillsFlex .ALLS .progress1 h3,
+#Skills .SkillsFlex .ALLS .progress2 h3,
+#Skills .SkillsFlex .ALLS .progress3 h3,
+#Skills .SkillsFlex .ALLS .progress4 h3 {
+  position: relative;
+  top: 22%;
+  text-transform: translate(-50%, -50%);
+  font-size: 23pt;
+  z-index: 1;
+  font-weight: 500;
+}
+#Skills .SkillsFlex .ALLS .progress1 h3 span,
+#Skills .SkillsFlex .ALLS .progress2 h3 span,
+#Skills .SkillsFlex .ALLS .progress3 h3 span,
+#Skills .SkillsFlex .ALLS .progress4 h3 span {
+  font-size: 25pt;
+  font-weight: 400;
+}
+#Skills .SkillsFlex .ALLS .progress1 h4,
+#Skills .SkillsFlex .ALLS .progress2 h4,
+#Skills .SkillsFlex .ALLS .progress3 h4,
+#Skills .SkillsFlex .ALLS .progress4 h4 {
+  position: absolute;
+  z-index: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 27pt;
+}
+#Skills .SkillsFlex .ALLS .progress1::before,
+#Skills .SkillsFlex .ALLS .progress2::before,
+#Skills .SkillsFlex .ALLS .progress3::before,
+#Skills .SkillsFlex .ALLS .progress4::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  margin-left: 50%;
+  transform-origin: left;
+  border-radius: 0 100% 100% 0/50%;
+}
+#Skills .SkillsFlex .ALLS .progress1::after,
+#Skills .SkillsFlex .ALLS .progress2::after,
+#Skills .SkillsFlex .ALLS .progress3::after,
+#Skills .SkillsFlex .ALLS .progress4::after {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border-radius: 50%;
+  background: #222;
+}
+#Skills .SkillsFlex .ALLS .progress1 {
+  background: conic-gradient(blueviolet 84%, #444 0);
+}
+#Skills .SkillsFlex .ALLS .progress2 {
+  background: conic-gradient(blueviolet 70%, #444 0);
+}
+#Skills .SkillsFlex .ALLS .progress3 {
+  background: conic-gradient(blueviolet 35%, #444 0);
+}
+#Skills .SkillsFlex .ALLS .progress4 {
+  background: conic-gradient(blueviolet 78%, #444 0);
+}
+#Skills::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 0 15px 1px #4f0a57;
+  bottom: 0;
+}
+
+#About-Me {
+  width: 100%;
+  height: 768px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0, 0, 0)), url("../Slike/Pozadina3.png");
+  background-position: center;
+  background-size: cover;
+}
+#About-Me .holder {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+#About-Me .holder .first-tabel table,
+#About-Me .holder .second-tabel table {
+  border-collapse: collapse;
+}
+#About-Me .holder .first-tabel table td,
+#About-Me .holder .second-tabel table td {
+  padding: 10px;
+  text-align: center;
+  font-size: 17pt;
+  border-radius: 5px;
+  color: aliceblue;
+}
+#About-Me .holder .first-tabel table tr:nth-child(odd) td,
+#About-Me .holder .second-tabel table tr:nth-child(odd) td {
+  font-weight: bold;
+  background-color: #4f0a57;
+}
+#About-Me .holder .first-tabel table tr:nth-child(even),
+#About-Me .holder .second-tabel table tr:nth-child(even) {
+  background-color: blueviolet;
+}
+#About-Me .holder .Me img {
+  width: 220px;
+  border-radius: 15px;
+  margin-top: 40px;
+}
+
+#Contact {
+  width: 100%;
+  height: 668px;
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.1)), url("../Slike/Pozadina4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#Contact .Contact-holder {
+  top: 50%;
+  left: 50%;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Contact .Contact-holder .row100 {
+  position: relative;
+  width: 35%;
+}
+#Contact .Contact-holder .row100 .col {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 30px 0px 10px;
+  transition: 0.5s;
+}
+#Contact .Contact-holder .row100 .col .inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: aliceblue;
+}
+#Contact .Contact-holder .row100 .col .inputBox input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  font-size: 15pt;
+  padding: 0px 10px;
+  z-index: 1;
+  color: #000;
+}
+#Contact .Contact-holder .row100 .col .inputBox .Contact-Text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 15pt;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5;
+  pointer-events: none;
+}
+#Contact .Contact-holder .row100 .col .inputBox input:focus + .Contact-Text,
+#Contact .Contact-holder .row100 .col .inputBox input:valid + .Contact-Text {
+  top: -35;
+  left: -10;
+}
+#Contact .Contact-holder .row100 .col .inputBox .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: blueviolet;
+  transition: 0.5s;
+  border-radius: 5px;
+  pointer-events: none;
+}
+#Contact .Contact-holder .row100 .col .inputBox input:focus ~ .line,
+#Contact .Contact-holder .row100 .col .inputBox input:valid ~ .line {
+  height: 100%;
+}
+
+footer {
+  background-color: #01002c;
+  padding: 20px 0;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+footer .footer-col {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+footer .footer-col p {
+  color: aliceblue;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+footer .footer-col a {
+  color: aliceblue;
+  font-size: 24px;
+  margin: 0 10px;
+}
+footer .footer-col a:hover {
+  color: blueviolet;
+}
+
+@media screen and (max-width: 1366px) and (max-height: 768) {
+  #hed {
+    height: 750px;
+  }
+  .Menu-Ul ul {
+    height: 100px;
+  }
+  .Menu-Ul ul a {
+    font-size: 22pt;
+  }
+  .Menu-Ul ul li {
+    padding: 30px 10px 10px 10px;
+  }
+  #Contact input {
+    width: 100%;
+    font-size: 12pt !important;
+    border: none !important;
+    padding: 7px 35px !important;
+    cursor: pointer;
+    outline: none;
+    background: blueviolet;
+    color: #Contact input aliceblue !important;
+    border-radius: 2px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  #hed {
+    height: 810px;
+  }
+  .Menu-Ul ul {
+    height: 135px;
+  }
+  .Menu-Ul ul a {
+    font-size: 25pt;
+  }
+  .Menu-Ul ul li {
+    padding: 40px 10px 10px 10px;
+  }
+  .BText {
+    top: 52%;
+  }
+  .BText h1 {
+    font-size: 28pt;
+  }
+  #CV {
+    width: 240px;
+  }
+  #CV h2 {
+    font-size: 24pt;
+  }
+  #OCCUPATIONS {
+    height: 768px;
+  }
+  #OCCUPATIONS .OCCU1 {
+    width: 29%;
+  }
+  #OCCUPATIONS .OCCU1 i {
+    font-size: 40px;
+  }
+  #OCCUPATIONS .OCCU1 h2 {
+    font-size: 22pt;
+  }
+  #OCCUPATIONS .OCCU1 p {
+    width: 90%;
+    font-size: 19pt;
+  }
+  #Projects img {
+    width: 470px;
+  }
+  #Skills .ALLS .progress1,
+  #Skills .ALLS .progress2,
+  #Skills .ALLS .progress3,
+  #Skills .ALLS .progress4 {
+    width: 300px;
+    height: 300px;
+  }
+  #Skills .ALLS .progress1 h3,
+  #Skills .ALLS .progress2 h3,
+  #Skills .ALLS .progress3 h3,
+  #Skills .ALLS .progress4 h3 {
+    font-size: 20pt;
+    left: 1%;
+  }
+  #Skills .ALLS .progress1 h3 span,
+  #Skills .ALLS .progress2 h3 span,
+  #Skills .ALLS .progress3 h3 span,
+  #Skills .ALLS .progress4 h3 span {
+    font-size: 20pt;
+  }
+  #Skills .ALLS .progress1 h4,
+  #Skills .ALLS .progress2 h4,
+  #Skills .ALLS .progress3 h4,
+  #Skills .ALLS .progress4 h4 {
+    font-size: 22pt;
+  }
+  #About-Me {
+    height: 810px;
+  }
+  #About-Me tbody tr td {
+    padding: 15px;
+    font-size: 22pt;
+  }
+  #About-Me .Me {
+    width: 220px;
+    margin-top: 70px;
+    padding: 15px 10px 10px 10px;
+  }
+  #Contact input {
+    width: 100%;
+    font-size: 12pt !important;
+    border: none !important;
+    padding: 7px 35px !important;
+    cursor: pointer;
+    outline: none;
+    background: blueviolet;
+    color: #Contact input aliceblue !important;
+    border-radius: 2px;
+  }
+}
+@media screen and (max-width: 1115px) {
+  #Skills {
+    height: 650px;
+  }
+  #Skills .ALLS .progress1,
+  #Skills .ALLS .progress2,
+  #Skills .ALLS .progress3,
+  #Skills .ALLS .progress4 {
+    width: 120px;
+    height: 120px;
+  }
+  #Contact input {
+    width: 100%;
+    font-size: 12pt !important;
+    border: none !important;
+    padding: 7px 35px !important;
+    cursor: pointer;
+    outline: none;
+    background: blueviolet;
+    color: #Contact input aliceblue !important;
+    border-radius: 2px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 700px) {
+  #hed {
+    height: 768px;
+  }
+  .Menu-Ul a {
+    font-size: 20pt;
+  }
+  .Menu-Ul li {
+    padding: 30px 10px 10px 10px;
+  }
+  .BText {
+    top: 45%;
+  }
+  .BText h1 {
+    font-size: 20pt;
+  }
+  #Qualifications h1 {
+    font-size: 20pt;
+  }
+  #Qualifications h1::before {
+    width: 7%;
+  }
+  #Qualifications h1::after {
+    width: 7%;
+  }
+  #OCCUPATIONS {
+    height: 768px;
+  }
+  #OCCUPATIONS .OCCU1 {
+    width: 29%;
+  }
+  #OCCUPATIONS .OCCU1 i {
+    font-size: 55px;
+  }
+  #OCCUPATIONS .OCCU1 h2 {
+    font-size: 19pt;
+  }
+  #OCCUPATIONS .OCCU1 p {
+    width: 90%;
+    font-size: 17pt;
+  }
+  #CV {
+    width: 24%;
+    top: 56%;
+  }
+  #CV h2 {
+    font-size: 17pt;
+  }
+  #Projects img {
+    width: 450px;
+  }
+  .ALLS {
+    display: inline;
+  }
+  #Skills .ALLS .progress1,
+  #Skills .ALLS .progress2,
+  #Skills .ALLS .progress3,
+  #Skills .ALLS .progress4 {
+    width: 150px;
+    height: 150px;
+  }
+  #Contact input {
+    width: 100%;
+    font-size: 12pt !important;
+    border: none !important;
+    padding: 7px 35px !important;
+    cursor: pointer;
+    outline: none;
+    background: blueviolet;
+    color: #Contact input aliceblue !important;
+    border-radius: 2px;
+  }
+}
+@media only screen and (min-width: 1700px) and (max-width: 1950px) {
+  #hed {
+    height: 1080px;
+  }
+  .Menu-Ul {
+    height: 150px;
+  }
+  .Menu-Ul a {
+    font-size: 35pt;
+  }
+  .Menu-Ul li {
+    padding: 40px;
+  }
+  .BText h1 {
+    font-size: 47pt;
+  }
+  .BText .cursor-animation {
+    height: 67px;
+  }
+  #CV {
+    width: 15%;
+    top: 60%;
+  }
+  #CV h2 {
+    font-size: 30pt;
+    border: 5px solid rgb(240, 248, 255);
+  }
+  #OCCUPATIONS {
+    height: 1080px;
+  }
+  #Qualifications h1 {
+    font-size: 40pt;
+  }
+  .OCCU1 {
+    width: 25%;
+  }
+  .OCCU1 i {
+    font-size: 100px;
+  }
+  .OCCU1 h2 {
+    font-size: 30pt;
+  }
+  .OCCU1 p {
+    font-size: 25pt;
+  }
+  #Projects {
+    height: 1080px;
+  }
+  #Projects .image {
+    width: 650px;
+  }
+  #Projects .container {
+    width: 100%;
+    background-color: aliceblue;
+  }
+  #Projects .image-overlay {
+    width: 650px;
+  }
+  #Projects .image-link:hover .image {
+    filter: brightness(15%);
+  }
+  #Projects .image-text {
+    font-size: 30pt;
+    padding-bottom: 230px;
+    margin-bottom: -640px;
+    position: relative;
+    border-top: 4px outset aliceblue;
+    border-bottom: 4px outset aliceblue;
+  }
+  #Skills {
+    height: 600px;
+  }
+  #Skills .ALLS .progress1,
+  #Skills .ALLS .progress2,
+  #Skills .ALLS .progress3,
+  #Skills .ALLS .progress4 {
+    width: 350px !important;
+    height: 350px !important;
+    margin-top: 50px;
+  }
+  #Skills .ALLS .progress1 h3,
+  #Skills .ALLS .progress2 h3,
+  #Skills .ALLS .progress3 h3,
+  #Skills .ALLS .progress4 h3 {
+    font-size: 35pt !important;
+    left: 1%;
+  }
+  #Skills .ALLS .progress1 h3 span,
+  #Skills .ALLS .progress2 h3 span,
+  #Skills .ALLS .progress3 h3 span,
+  #Skills .ALLS .progress4 h3 span {
+    font-size: 30pt !important;
+  }
+  #Skills .ALLS .progress1 h4,
+  #Skills .ALLS .progress2 h4,
+  #Skills .ALLS .progress3 h4,
+  #Skills .ALLS .progress4 h4 {
+    font-size: 30pt !important;
+  }
+  #About-Me {
+    height: 1080px;
+  }
+  #About-Me tbody tr td {
+    padding: 15px;
+    font-size: 25pt !important;
+  }
+  #About-Me .Me {
+    width: 265px;
+    margin-top: 70px;
+  }
+  #About-Me .Me img {
+    width: 300px !important;
+    padding-right: 33px;
+  }
+  #Contact {
+    height: 1080px;
+  }
+  #Contact input {
+    width: 100%;
+    font-size: 26pt !important;
+    border: none !important;
+    padding: 7px 35px !important;
+    cursor: pointer;
+    outline: none;
+    background: blueviolet;
+    color: #Contact input aliceblue !important;
+    border-radius: 2px;
+  }
+  #Contact .Contact-Text {
+    font-size: 25pt !important;
+  }
+}
+@media only screen and (min-width: 1442px) and (max-width: 1699px) {
+  #hed {
+    height: 800px;
+  }
+  .BText {
+    top: 45%;
+    padding: 15px;
+  }
+  .BText h1 {
+    font-size: 27pt;
+  }
+  .BText h1 .cursor-animation {
+    height: 38px;
+    width: 6px;
+  }
+  #CV {
+    width: 240px;
+  }
+  #CV h2 {
+    font-size: 24pt;
+  }
+  #OCCUPATIONS {
+    height: 768px;
+  }
+  #OCCUPATIONS .OCCU1 {
+    width: 29%;
+  }
+  #OCCUPATIONS .OCCU1 i {
+    font-size: 40px;
+  }
+  #OCCUPATIONS .OCCU1 h2 {
+    font-size: 22pt;
+  }
+  #OCCUPATIONS .OCCU1 p {
+    width: 90%;
+    font-size: 19pt;
+  }
+  #Projects {
+    height: 840px !important;
+  }
+  #Projects img {
+    width: 500px;
+  }
+  #Skills {
+    height: 500px;
+  }
+  #Skills .ALLS .progress1,
+  #Skills .ALLS .progress2,
+  #Skills .ALLS .progress3,
+  #Skills .ALLS .progress4 {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  #Skills .ALLS .progress1 h3,
+  #Skills .ALLS .progress2 h3,
+  #Skills .ALLS .progress3 h3,
+  #Skills .ALLS .progress4 h3 {
+    font-size: 20pt;
+    left: 1%;
+  }
+  #Skills .ALLS .progress1 h3 span,
+  #Skills .ALLS .progress2 h3 span,
+  #Skills .ALLS .progress3 h3 span,
+  #Skills .ALLS .progress4 h3 span {
+    font-size: 20pt;
+  }
+  #Skills .ALLS .progress1 h4,
+  #Skills .ALLS .progress2 h4,
+  #Skills .ALLS .progress3 h4,
+  #Skills .ALLS .progress4 h4 {
+    font-size: 22pt;
+  }
+  #About-Me {
+    height: 810px;
+  }
+  #About-Me tbody tr td {
+    padding: 15px;
+    font-size: 23pt !important;
+  }
+  #About-Me .Me {
+    width: 220px;
+    margin-top: 70px;
+    padding: 15px 10px 10px 10px;
+  }
+  #Contact {
+    height: 810px;
+  }
+  #Contact input {
+    width: 100%;
+    font-size: 22pt !important;
+    border: none !important;
+    padding: 7px 35px !important;
+    cursor: pointer;
+    outline: none;
+    background: blueviolet;
+    color: #Contact input aliceblue !important;
+    border-radius: 2px;
+  }
+  #Contact .Contact-Text {
+    font-size: 20pt;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 500px) {
+  #hed {
+    height: 375px;
+  }
+  .Menu-Ul {
+    height: 120px;
+  }
+  .Menu-Ul ul a {
+    font-size: 14pt;
+  }
+  .Menu-Ul ul li {
+    padding: 10px 5px 5px 5px;
+  }
+  .BText {
+    top: 45%;
+    padding: 5px;
+  }
+  .BText h1 {
+    font-size: 12pt;
+  }
+  .BText h1 .cursor-animation {
+    height: 15px;
+    width: 4px;
+  }
+  #CV {
+    width: 100px;
+    top: 70% !important;
+  }
+  #CV h2 {
+    font-size: 10pt;
+  }
+  #OCCUPATIONS {
+    height: 900px;
+  }
+  #OCCUPATIONS #Qualifications {
+    font-size: 13pt;
+  }
+  #OCCUPATIONS .OCCU {
+    display: inline;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 i {
+    font-size: 30px;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 h2 {
+    font-size: 12pt;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 p {
+    width: 90%;
+    font-size: 11pt;
+  }
+  #Projects {
+    height: 1225px;
+  }
+  #Projects img {
+    width: 350px;
+  }
+  #Skills {
+    height: 525px;
+  }
+  #Skills .ALLS .progress1,
+  #Skills .ALLS .progress2,
+  #Skills .ALLS .progress3,
+  #Skills .ALLS .progress4 {
+    width: 180px !important;
+    height: 180px !important;
+  }
+  #Skills .ALLS .progress1 h3,
+  #Skills .ALLS .progress2 h3,
+  #Skills .ALLS .progress3 h3,
+  #Skills .ALLS .progress4 h3 {
+    font-size: 13pt !important;
+  }
+  #Skills .ALLS .progress1 h3 span,
+  #Skills .ALLS .progress2 h3 span,
+  #Skills .ALLS .progress3 h3 span,
+  #Skills .ALLS .progress4 h3 span {
+    font-size: 13pt !important;
+  }
+  #Skills .ALLS .progress1 h4,
+  #Skills .ALLS .progress2 h4,
+  #Skills .ALLS .progress3 h4,
+  #Skills .ALLS .progress4 h4 {
+    font-size: 14pt !important;
+  }
+  #About-Me {
+    height: 620px;
+  }
+  #About-Me tbody tr td {
+    padding: 5px;
+    font-size: 11pt !important;
+  }
+  #About-Me .Me {
+    margin-top: 7px;
+    padding: none;
+  }
+  #About-Me .Me img {
+    width: 200px !important;
+  }
+  #Contact {
+    height: 730px;
+  }
+  #Contact .row100 {
+    width: 60% !important;
+  }
+  #Contact .row100 input {
+    width: 100%;
+    font-size: 12pt !important;
+    border: none !important;
+    padding: 7px 35px !important;
+    cursor: pointer;
+    outline: none;
+    background: blueviolet;
+    color: #Contact .row100 input aliceblue !important;
+    border-radius: 2px;
+  }
+  #Contact .row100 .Contact-Text {
+    font-size: 13pt !important;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 425px) {
+  #hed {
+    height: 375px;
+  }
+  .Menu-Ul {
+    height: 120px;
+  }
+  .Menu-Ul ul a {
+    font-size: 14pt;
+  }
+  .Menu-Ul ul li {
+    padding: 10px 5px 5px 5px;
+  }
+  .BText {
+    top: 45%;
+    padding: 5px;
+  }
+  .BText h1 {
+    font-size: 12pt;
+  }
+  .BText h1 .cursor-animation {
+    height: 15px;
+    width: 4px;
+  }
+  #CV {
+    width: 100px;
+  }
+  #CV h2 {
+    font-size: 10pt;
+  }
+  #OCCUPATIONS {
+    height: 1000px;
+  }
+  #OCCUPATIONS #Qualifications {
+    font-size: 13pt;
+  }
+  #OCCUPATIONS .OCCU {
+    display: inline;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 i {
+    font-size: 30px;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 h2 {
+    font-size: 12pt;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 p {
+    width: 90%;
+    font-size: 11pt;
+  }
+  #Projects {
+    height: 1100px;
+  }
+  #Projects img {
+    width: 300px;
+  }
+  #Skills {
+    height: 525px;
+  }
+  #Skills .ALLS .progress1,
+  #Skills .ALLS .progress2,
+  #Skills .ALLS .progress3,
+  #Skills .ALLS .progress4 {
+    width: 160px !important;
+    height: 160px !important;
+  }
+  #Skills .ALLS .progress1 h3,
+  #Skills .ALLS .progress2 h3,
+  #Skills .ALLS .progress3 h3,
+  #Skills .ALLS .progress4 h3 {
+    font-size: 13pt !important;
+  }
+  #Skills .ALLS .progress1 h3 span,
+  #Skills .ALLS .progress2 h3 span,
+  #Skills .ALLS .progress3 h3 span,
+  #Skills .ALLS .progress4 h3 span {
+    font-size: 13pt !important;
+  }
+  #Skills .ALLS .progress1 h4,
+  #Skills .ALLS .progress2 h4,
+  #Skills .ALLS .progress3 h4,
+  #Skills .ALLS .progress4 h4 {
+    font-size: 14pt !important;
+  }
+  #About-Me {
+    height: 620px;
+  }
+  #About-Me tbody tr td {
+    padding: 5px;
+    font-size: 11pt !important;
+  }
+  #About-Me .Me {
+    margin-top: 7px;
+    padding: none;
+  }
+  #About-Me .Me img {
+    width: 200px !important;
+  }
+  #Contact {
+    height: 730px;
+  }
+  #Contact .row100 {
+    width: 60% !important;
+  }
+  #Contact .row100 input {
+    width: 100%;
+    font-size: 12pt !important;
+    border: none !important;
+    padding: 7px 35px !important;
+    cursor: pointer;
+    outline: none;
+    background: blueviolet;
+    color: #Contact .row100 input aliceblue !important;
+    border-radius: 2px;
+  }
+  #Contact .row100 .Contact-Text {
+    font-size: 13pt !important;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 401px) {
+  #hed {
+    height: 375px;
+  }
+  .Menu-Ul {
+    height: 120px;
+  }
+  .Menu-Ul ul a {
+    font-size: 14pt;
+  }
+  .Menu-Ul ul li {
+    padding: 10px 5px 5px 5px;
+  }
+  .BText {
+    top: 45%;
+    padding: 5px;
+  }
+  .BText h1 {
+    font-size: 12pt;
+  }
+  .BText h1 .cursor-animation {
+    height: 15px;
+    width: 4px;
+  }
+  #CV {
+    width: 100px;
+  }
+  #CV h2 {
+    font-size: 10pt;
+  }
+  #OCCUPATIONS {
+    height: 1000px;
+  }
+  #OCCUPATIONS #Qualifications {
+    font-size: 13pt;
+  }
+  #OCCUPATIONS .OCCU {
+    display: inline;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 i {
+    font-size: 30px;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 h2 {
+    font-size: 12pt;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 p {
+    width: 90%;
+    font-size: 11pt;
+  }
+  #Projects {
+    height: 1100px;
+  }
+  #Projects img {
+    width: 300px;
+  }
+  #Skills {
+    height: 525px;
+  }
+  #Skills .ALLS .progress1,
+  #Skills .ALLS .progress2,
+  #Skills .ALLS .progress3,
+  #Skills .ALLS .progress4 {
+    width: 160px !important;
+    height: 160px !important;
+  }
+  #Skills .ALLS .progress1 h3,
+  #Skills .ALLS .progress2 h3,
+  #Skills .ALLS .progress3 h3,
+  #Skills .ALLS .progress4 h3 {
+    font-size: 13pt !important;
+  }
+  #Skills .ALLS .progress1 h3 span,
+  #Skills .ALLS .progress2 h3 span,
+  #Skills .ALLS .progress3 h3 span,
+  #Skills .ALLS .progress4 h3 span {
+    font-size: 13pt !important;
+  }
+  #Skills .ALLS .progress1 h4,
+  #Skills .ALLS .progress2 h4,
+  #Skills .ALLS .progress3 h4,
+  #Skills .ALLS .progress4 h4 {
+    font-size: 14pt !important;
+  }
+  #About-Me {
+    height: 620px;
+  }
+  #About-Me tbody tr td {
+    padding: 5px;
+    font-size: 10.5pt !important;
+  }
+  #About-Me .Me {
+    margin-top: 7px;
+    padding: none;
+  }
+  #About-Me .Me img {
+    width: 180px !important;
+    padding-left: 22px !important;
+  }
+  #Contact {
+    height: 730px;
+  }
+  #Contact .row100 {
+    width: 60% !important;
+  }
+  #Contact .row100 input {
+    width: 100%;
+    font-size: 12pt !important;
+    border: none !important;
+    padding: 7px 35px !important;
+    cursor: pointer;
+    outline: none;
+    background: blueviolet;
+    color: #Contact .row100 input aliceblue !important;
+    border-radius: 2px;
+  }
+  #Contact .row100 .Contact-Text {
+    font-size: 13pt !important;
+  }
+}
+@media only screen and (max-width: 375px) and (min-width: 350px) {
+  #hed {
+    height: 375px;
+  }
+  .Menu-Ul {
+    height: 120px;
+  }
+  .Menu-Ul ul a {
+    font-size: 14pt;
+  }
+  .Menu-Ul ul li {
+    padding: 10px 5px 5px 5px;
+  }
+  .BText {
+    top: 45%;
+    padding: 5px;
+  }
+  .BText h1 {
+    font-size: 12pt;
+  }
+  .BText h1 .cursor-animation {
+    height: 15px;
+    width: 4px;
+  }
+  #CV {
+    width: 100px;
+  }
+  #CV h2 {
+    font-size: 10pt;
+  }
+  #OCCUPATIONS {
+    height: 1000px;
+  }
+  #OCCUPATIONS #Qualifications {
+    font-size: 13pt;
+  }
+  #OCCUPATIONS .OCCU {
+    display: inline;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 i {
+    font-size: 30px;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 h2 {
+    font-size: 12pt;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 p {
+    width: 90%;
+    font-size: 11pt;
+  }
+  #Projects {
+    height: 1100px;
+  }
+  #Projects img {
+    width: 300px;
+  }
+  #Skills {
+    height: 525px;
+  }
+  #Skills .ALLS .progress1,
+  #Skills .ALLS .progress2,
+  #Skills .ALLS .progress3,
+  #Skills .ALLS .progress4 {
+    width: 145px !important;
+    height: 145px !important;
+  }
+  #Skills .ALLS .progress1 h3,
+  #Skills .ALLS .progress2 h3,
+  #Skills .ALLS .progress3 h3,
+  #Skills .ALLS .progress4 h3 {
+    font-size: 13pt !important;
+  }
+  #Skills .ALLS .progress1 h3 span,
+  #Skills .ALLS .progress2 h3 span,
+  #Skills .ALLS .progress3 h3 span,
+  #Skills .ALLS .progress4 h3 span {
+    font-size: 13pt !important;
+  }
+  #Skills .ALLS .progress1 h4,
+  #Skills .ALLS .progress2 h4,
+  #Skills .ALLS .progress3 h4,
+  #Skills .ALLS .progress4 h4 {
+    font-size: 14pt !important;
+  }
+  #About-Me {
+    height: 620px;
+  }
+  #About-Me tbody tr td {
+    padding: 5px;
+    font-size: 8pt !important;
+  }
+  #About-Me .Me {
+    margin-top: 7px;
+    padding: none;
+  }
+  #About-Me .Me img {
+    width: 175px !important;
+    padding-left: 20px !important;
+  }
+  #Contact {
+    height: 730px;
+  }
+  #Contact .row100 {
+    width: 70% !important;
+  }
+  #Contact .row100 input {
+    width: 100%;
+    font-size: 12pt !important;
+    border: none !important;
+    padding: 7px 35px !important;
+    cursor: pointer;
+    outline: none;
+    background: blueviolet;
+    color: #Contact .row100 input aliceblue !important;
+    border-radius: 2px;
+  }
+  #Contact .row100 .Contact-Text {
+    font-size: 13pt !important;
+  }
+}
+@media only screen and (max-width: 349px) and (min-width: 320px) {
+  #hed {
+    height: 375px;
+  }
+  .Menu-Ul {
+    height: 120px;
+  }
+  .Menu-Ul ul a {
+    font-size: 13pt;
+  }
+  .Menu-Ul ul li {
+    padding: 5px 2px 2px 2px;
+  }
+  .BText {
+    top: 45%;
+    padding: 5px;
+  }
+  .BText h1 {
+    font-size: 12pt;
+  }
+  .BText h1 .cursor-animation {
+    height: 15px;
+    width: 4px;
+  }
+  #CV {
+    width: 100px;
+  }
+  #CV h2 {
+    font-size: 10pt;
+  }
+  #OCCUPATIONS {
+    height: 1000px;
+  }
+  #OCCUPATIONS #Qualifications {
+    font-size: 13pt;
+  }
+  #OCCUPATIONS .OCCU {
+    display: inline;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 i {
+    font-size: 28px;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 h2 {
+    font-size: 13pt;
+  }
+  #OCCUPATIONS .OCCU .OCCU1 p {
+    width: 95%;
+    font-size: 10.2pt;
+  }
+  #Projects {
+    height: 1050px;
+  }
+  #Projects img {
+    width: 270px;
+  }
+  #Skills {
+    height: 450px;
+  }
+  #Skills .ALLS .progress1,
+  #Skills .ALLS .progress2,
+  #Skills .ALLS .progress3,
+  #Skills .ALLS .progress4 {
+    width: 130px !important;
+    height: 130px !important;
+  }
+  #Skills .ALLS .progress1 h3,
+  #Skills .ALLS .progress2 h3,
+  #Skills .ALLS .progress3 h3,
+  #Skills .ALLS .progress4 h3 {
+    font-size: 12pt !important;
+  }
+  #Skills .ALLS .progress1 h3 span,
+  #Skills .ALLS .progress2 h3 span,
+  #Skills .ALLS .progress3 h3 span,
+  #Skills .ALLS .progress4 h3 span {
+    font-size: 12pt !important;
+  }
+  #Skills .ALLS .progress1 h4,
+  #Skills .ALLS .progress2 h4,
+  #Skills .ALLS .progress3 h4,
+  #Skills .ALLS .progress4 h4 {
+    font-size: 13pt !important;
+  }
+  #About-Me {
+    height: 500px;
+  }
+  #About-Me tbody tr td {
+    padding: 5px;
+    font-size: 7pt !important;
+  }
+  #About-Me .Me {
+    margin-top: 7px;
+    padding: none;
+  }
+  #About-Me .Me img {
+    margin-top: 5px !important;
+    width: 160px !important;
+    padding-left: 20px !important;
+  }
+  #Contact {
+    height: 730px;
+  }
+  #Contact .Contact-holder {
+    padding-top: 1px;
+  }
+  #Contact .Contact-holder .row100 {
+    width: 70% !important;
+  }
+  #Contact .Contact-holder .row100 input {
+    width: 100%;
+    font-size: 12pt !important;
+    border: none !important;
+    padding: 7px 35px !important;
+    cursor: pointer;
+    outline: none;
+    background: blueviolet;
+    color: #Contact .Contact-holder .row100 input aliceblue !important;
+    border-radius: 2px;
+  }
+  #Contact .Contact-holder .row100 .Contact-Text {
+    font-size: 13pt !important;
+  }
+}/*# sourceMappingURL=scss.css.map */

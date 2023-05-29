@@ -1,0 +1,1603 @@
+$crna: black;
+$Belo-plava: aliceblue;
+$Pozadina: #01002c;
+$Tekst-animacija: rgba(255, 255, 255, 0.8); 
+$Ljubicasta: #4f0a57;
+$Projekat-Zatamljenje: rgba(0, 0, 0, 0.5);
+$Svetlo-ljubicasta: blueviolet;
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+@keyframes blink {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes fill1 {
+	0% {
+		transform: rotate(150deg);
+	}
+	100% {
+		transform: rotate(300deg);
+	}
+}
+* {
+	padding: 0px;
+	margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #121d31;
+}
+::-webkit-scrollbar{
+    width: 12px;
+  }
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px $Svetlo-ljubicasta; 
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-thumb{
+    background: $Svetlo-ljubicasta; 
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-thumb:hover{
+    background: $Svetlo-ljubicasta;
+  }
+#hed {
+	width: 100%;
+	height: 650px;
+	background-image: url('../Slike/Pozadina1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center center;
+	position: relative;
+}
+header {
+	position: absolute;
+	height: 150px;
+	width: 100%;
+}
+.Menu-Ul {
+	display: flex;
+	width: 100%;
+    height: 100px;
+    background-color: $Pozadina;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+	a {
+		color: $Svetlo-ljubicasta;
+		text-decoration: none;
+		font-size: 24pt;
+    }
+	ul {
+		display: flex;
+		justify-content: center;
+        flex-wrap: wrap;
+		width: 100%;
+	}
+	li {
+		text-align: center;
+		list-style-type: none;
+	
+		margin-left: 15px;
+		padding: 40px 10px 10px 10px;
+		line-height: 1.2em;
+	}
+    li:hover a {
+        text-decoration: underline;
+        transition-delay: 0.1s;
+      } 
+       
+}
+
+#I {
+	display: flex;
+	justify-content: center;
+	img {
+		border-radius: 50%;
+		width: 150px;
+	}
+}
+
+.BText {
+	position: absolute;
+	left: 50%;
+    top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: $Tekst-animacija;
+	padding: 10px;
+	h1 {
+		color: $crna;
+		font-size: 22pt;
+		font-weight: bold;
+		text-align: center;
+	}
+}
+.typing-animation {
+	color: $crna;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: typing 4s steps(40, end);
+}
+.cursor-animation {
+	display: inline-block;
+	vertical-align: bottom;
+	width: 10px;
+	height: 30px;
+	background-color: $crna;
+	margin-left: 5px;
+	animation: blink 0.7s infinite;
+}
+#CV {
+	position: absolute;
+    top: 60% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 14%;
+	h2 {
+		border: 1px solid rgb(240, 248, 255);
+		padding: 10px;
+        text-align: center;
+        font-size: 19pt;
+	}
+	a {
+		color: $Belo-plava;
+		text-decoration: none;
+	}
+}
+#OCCUPATIONS {
+	width: 100%;
+	height: 500px;
+	background-color: $Pozadina;
+	background: linear-gradient(to bottom, $Pozadina ,#93859f );
+}
+#Qualifications {
+	text-align: center;
+	color: $Belo-plava;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	h1 {
+		font-size: 24pt;
+		&::before {
+			content: "";
+			display: inline-block;
+			width: 10%;
+			height: 4px;
+			background-color: $Svetlo-ljubicasta;
+			border-radius: 15px;
+			margin-right: 10px;
+		}
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 10%;
+			height: 4px;
+			background-color: $Svetlo-ljubicasta;
+			border-radius: 15px;
+			margin-left: 10px;
+		}
+	}
+}
+.OCCU {
+	display: flex;
+	justify-content: space-evenly;
+}
+.OCCU1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 2px solid rgb(240, 248, 255);
+	padding: 10px;
+	width: 20%;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	i {
+		font-size: 50px;
+		border: 1px solid rgb(240, 248, 255);
+		background-color: $Belo-plava;
+		border-radius: 50%;
+		padding: 10px;
+		margin-top: -25px;
+	}
+	h2 {
+		color: $Svetlo-ljubicasta;
+		padding-top: 15px;
+        font-size: 17pt;
+	}
+	p {
+		width: 90%;
+		color: $Belo-plava;
+		padding-top: 15px;
+	}
+}
+#Projects {
+	width: 100%;
+	height: 800px;
+	background-image: url('../Slike/Pozadina2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center center;
+	img {
+		width: 450px;
+		padding-bottom: 30px;
+		padding-top: 30px;
+	}
+}
+.AllP {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.image-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    
+}
+.image-link {
+	position: relative;
+	display: inline-block;
+	margin: 10px;
+	overflow: hidden;
+    border-radius: 10px;
+	&:hover {
+		.image {
+			filter: brightness(40%);
+		}
+		.image-overlay {
+			opacity: 1;
+		}
+	}
+}
+.image {
+	display: block;
+	width: 200px;
+	transition: filter 0.3s ease-in-out;
+}
+.image-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: $Projekat-Zatamljenje;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+.image-text {
+	color: $Belo-plava;
+	font-size: 17pt;
+    text-align: center;
+}
+#Skills {
+	height: 400px;
+	background-color: $Pozadina;
+    box-shadow: 0 0 15px 1px $Ljubicasta;
+    position: relative;
+    .SkillsFlex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+        .ALLS {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            .progress1,
+            .progress2,
+            .progress3,
+            .progress4{
+                width: 250px;
+                height: 250px;
+                position: relative;
+                border-radius: 50%;
+                color: $Belo-plava;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h3{
+                    position: relative;
+                    top: 22%;
+                    text-transform: translate(-50%, -50%);
+                    font-size: 23pt;
+                    z-index: 1;
+                    font-weight: 500;
+                    span{
+                        font-size: 25pt;
+                        font-weight: 400;
+                    }
+                }
+                h4{
+                    position: absolute;
+                    z-index: 1;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    font-size: 27pt;
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    height: 100%;
+                    margin-left: 50%;
+                    transform-origin: left;
+                    border-radius: 0 100% 100% 0/50%;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    inset: 10px;
+                    border-radius: 50%;
+                    background: #222;
+                }
+            }
+            .progress1{
+                background: conic-gradient( $Svetlo-ljubicasta 84%, #444 0)
+            }
+            .progress2{
+                background: conic-gradient( $Svetlo-ljubicasta 70%, #444 0)
+            }
+            .progress3{
+                background: conic-gradient( $Svetlo-ljubicasta 35%, #444 0)
+            }
+            .progress4{
+                background: conic-gradient( $Svetlo-ljubicasta 78%, #444 0)
+            }
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        box-shadow: 0 0 15px 1px $Ljubicasta;
+        bottom: 0;
+    }
+}
+#About-Me{
+    width: 100%;
+    height: 768px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('../Slike/Pozadina3.png');
+    background-position: center;
+    background-size: cover;
+    .holder{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;;
+        .first-tabel,
+        .second-tabel{
+            table {
+                border-collapse: collapse;
+              td {
+                padding: 10px;
+                text-align: center;
+                font-size: 17pt;
+                border-radius: 5px;
+                color: $Belo-plava;
+              }
+              
+              tr:nth-child(odd) td {
+                font-weight: bold;
+                background-color: $Ljubicasta;
+              }
+              tr:nth-child(even) {
+                background-color: $Svetlo-ljubicasta;
+              }
+            }
+        }
+        .Me img{
+            width: 220px;
+            border-radius: 15px;
+            margin-top: 40px;
+        }   
+    }
+}
+#Contact{
+    width: 100%;
+    height: 668px;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url('../Slike/Pozadina4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    .Contact-holder{
+        top:50%;
+        left: 50%;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .row100{
+            position: relative;
+            width: 35%;
+            .col{
+                position: relative;
+                width: 100%;
+                padding: 0 10px;
+                margin: 30px 0px 10px;
+                transition: 0.5s;
+                .inputBox{
+                    position: relative;
+                    width: 100%;
+                    height: 40px;
+                    color: $Belo-plava;
+                    input{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: transparent;
+                        box-shadow: none;
+                        border: none;
+                        font-size: 15pt;
+                        padding: 0px 10px;
+                        z-index: 1;
+                        color: #000;
+                    }
+                    .Contact-Text{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        line-height: 40px;
+                        font-size: 15pt;
+                        padding: 0 10px;
+                        display: block;
+                        transition: 0.5;
+                        pointer-events: none;
+                    }
+                    input:focus + .Contact-Text,
+                    input:valid + .Contact-Text{
+                        top:-35;
+                        left: -10;
+                    }
+                    .line{
+                        position: absolute;
+                        bottom: 0;
+                        display: block;
+                        width: 100%;
+                        height: 2px;
+                        background: $Svetlo-ljubicasta;
+                        transition: 0.5s;
+                        border-radius: 5px;
+                        pointer-events: none;
+                    }
+                    input:focus ~ .line,
+                    input:valid ~ .line{
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    background-color: $Pozadina ;
+    padding: 20px 0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  .footer-col {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+        p {
+            color: $Belo-plava;
+            font-size: 14px;
+            padding-bottom: 10px;
+        }
+        a {
+            color: $Belo-plava;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        a:hover {
+        color: $Svetlo-ljubicasta;
+        }
+    }
+}
+@media screen and (max-width: 1366px) and (max-height:768){
+    #hed{
+        height: 750px;
+    }
+    .Menu-Ul {
+        ul{
+            height: 100px;
+            a {
+                font-size: 22pt;
+            }
+            li {
+                padding: 30px 10px 10px 10px;
+            }
+        }
+	}
+    #Contact{
+        input {
+            width: 100%;
+            font-size: 12pt !important;
+            border: none !important;
+            padding: 7px 35px !important;
+            cursor: pointer;
+            outline: none;
+            background: $Svetlo-ljubicasta ;
+            color: &$Belo-plava !important;
+            border-radius: 2px;
+        }
+    }
+}
+@media screen and (max-width: 1440px){
+    #hed{
+        height: 810px;
+    }
+    .Menu-Ul {
+        ul{
+            height: 135px;
+            a {
+                font-size: 25pt;
+            }
+            li {
+                padding: 40px 10px 10px 10px;
+            }
+        }
+	}
+    .BText {
+        top:52%;
+        h1 {
+            font-size: 28pt;
+        }
+    }
+    #CV {
+        width: 240px;
+        h2 {
+            font-size: 24pt;
+        }
+    }
+    #OCCUPATIONS{
+        height: 768px;
+        .OCCU1 {
+            width: 29%;
+            i{
+                font-size: 40px;
+            }
+            h2{
+                font-size: 22pt;
+            }
+            p{
+                width: 90%;
+                font-size: 19pt;
+            }
+        }
+    }
+    #Projects{
+        img{
+            width: 470px;
+        }
+    }
+    #Skills{
+        .ALLS{
+            .progress1,
+            .progress2,
+            .progress3,
+            .progress4{
+                width: 300px;
+                height: 300px;
+                h3{
+                    font-size: 20pt;
+                    left: 1%;
+                    span{
+                        font-size: 20pt;
+                    }
+                }
+                h4{
+                    font-size: 22pt;
+                }
+            }
+        }
+    }
+    #About-Me{
+        height: 810px;
+        tbody{
+            tr{
+                td{
+                    padding: 15px;
+                    font-size: 22pt;
+                }
+            }
+        }
+        .Me{
+            width: 220px;
+            margin-top: 70px;
+            padding: 15px 10px 10px 10px;
+        }
+    }
+    #Contact{
+        input {
+            width: 100%;
+            font-size: 12pt !important;
+            border: none !important;
+            padding: 7px 35px !important;
+            cursor: pointer;
+            outline: none;
+            background: $Svetlo-ljubicasta ;
+            color: &$Belo-plava !important;
+            border-radius: 2px;
+        }
+    }
+}
+@media screen and (max-width: 1115px) {
+    #Skills {
+        height: 650px;
+        .ALLS{
+            .progress1,
+            .progress2,
+            .progress3,
+            .progress4{
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+    #Contact{
+        input {
+            width: 100%;
+            font-size: 12pt !important;
+            border: none !important;
+            padding: 7px 35px !important;
+            cursor: pointer;
+            outline: none;
+            background: $Svetlo-ljubicasta ;
+            color: &$Belo-plava !important;
+            border-radius: 2px;
+        }
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 700px) {
+    #hed{
+        height: 768px;
+    }
+	.Menu-Ul {
+		a {
+			font-size: 20pt;
+		}
+        li {
+            padding: 30px 10px 10px 10px;
+
+        }
+	}
+	.BText {
+        top:45%;
+		h1 {
+			font-size: 20pt;
+		}
+	}
+    #Qualifications{
+        h1{
+            font-size: 20pt;
+            &::before {
+                width: 7%;
+            }
+            &::after {
+                width: 7%;
+            }
+        }
+    }
+    #OCCUPATIONS{
+        height: 768px;
+        .OCCU1 {
+            width: 29%;
+            i{
+                font-size: 55px;
+            }
+            h2{
+                font-size: 19pt;
+            }
+            p{
+                width: 90%;
+                font-size: 17pt;
+            }
+        }
+    }
+    #CV{
+        width: 24%;
+        top: 56%;
+        h2{
+            font-size: 17pt;
+        }
+    }
+    #Projects{
+        img{
+            width: 450px;
+        }
+    }
+    .ALLS {
+		display: inline;
+	}
+    #Skills{
+        .ALLS{
+            .progress1,
+            .progress2,
+            .progress3,
+            .progress4{
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+    #Contact{
+        input {
+            width: 100%;
+            font-size: 12pt !important;
+            border: none !important;
+            padding: 7px 35px !important;
+            cursor: pointer;
+            outline: none;
+            background: $Svetlo-ljubicasta ;
+            color: &$Belo-plava !important;
+            border-radius: 2px;
+        }
+    }
+}
+@media only screen and (min-width: 1700px) and (max-width:1950px){
+    #hed{
+        height: 1080px;
+    }
+    .Menu-Ul {
+        height: 150px;
+        a{
+            font-size: 35pt;
+        }
+        li{
+            padding: 40px;
+        }
+    }
+    .BText {
+        h1{
+            font-size: 47pt;
+        }
+        .cursor-animation{
+            height: 67px;
+        }
+    }
+    #CV{
+        width: 15%;
+        top: 60%;
+        h2{
+            font-size: 30pt;
+            border: 5px solid rgb(240, 248, 255);
+        }
+    }
+    #OCCUPATIONS{
+        height: 1080px;
+    }
+    #Qualifications {
+        h1{
+            font-size: 40pt;
+        }
+    } 
+    .OCCU1 {
+        width: 25%;
+        i{
+            font-size: 100px;
+        }
+        h2{
+            font-size: 30pt;
+        }
+        p{
+            font-size: 25pt;
+        }
+    }
+    #Projects {
+        height: 1080px;
+        .image{
+            width: 650px; 
+        } 
+        .container{
+            width: 100%;
+            background-color: $Belo-plava;
+        } 
+        .image-overlay{
+            width: 650px;;
+        }
+        .image-link{
+            &:hover {
+                .image {
+                    filter: brightness(15%);
+                }
+            }
+        }
+        .image-text{
+            font-size: 30pt;
+            padding-bottom: 230px;
+            margin-bottom: -640px;
+            position: relative;
+            border-top: 4px outset $Belo-plava;
+            border-bottom: 4px outset $Belo-plava;;
+        }
+    }
+    #Skills{
+        height: 600px;
+        .ALLS{
+            .progress1,
+            .progress2,
+            .progress3,
+            .progress4{
+                width: 350px !important;
+                height: 350px !important;
+                margin-top: 50px;
+            
+                h3{
+                    font-size: 35pt !important;
+                    left: 1%;
+                    span{
+                        font-size: 30pt !important
+                    }
+                }
+                h4{
+                    font-size: 30pt !important;
+                }
+            }
+        }
+    }
+    #About-Me{
+        height: 1080px;
+        tbody{
+            tr{
+                td{
+                    padding: 15px;
+                    font-size: 25pt !important;
+                }
+            }
+        }
+        .Me{
+            width: 265px;
+            margin-top: 70px;
+            img{
+                width: 300px !important;
+                padding-right: 33px;
+            }
+        }
+    }
+    #Contact{
+        height: 1080px;
+        input {
+            width: 100%;
+            font-size: 26pt !important;
+            border: none !important;
+            padding: 7px 35px !important;
+            cursor: pointer;
+            outline: none;
+            background: $Svetlo-ljubicasta ;
+            color: &$Belo-plava !important;
+            border-radius: 2px;
+        }
+        .Contact-Text{
+            font-size: 25pt !important;
+        }
+    }
+}
+@media only screen and (min-width: 1442px) and (max-width:1699px){
+    #hed{
+        height: 800px;
+    }
+    .BText {
+        top:45%;
+        padding: 15px;
+        h1 {
+            font-size: 27pt;
+            .cursor-animation{
+                height: 38px;
+                width: 6px;
+            }
+        }
+    }
+    #CV {
+        width: 240px;
+        h2 {
+            font-size: 24pt;
+        }
+    }
+    #OCCUPATIONS{
+        height: 768px;
+        .OCCU1 {
+            width: 29%;
+            i{
+                font-size: 40px;
+            }
+            h2{
+                font-size: 22pt;
+            }
+            p{
+                width: 90%;
+                font-size: 19pt;
+            }
+        }
+    }
+    #Projects{
+        height: 840px !important;
+        img{
+            width: 500px;
+        }
+    }
+    #Skills{
+        height: 500px;
+        .ALLS{
+            .progress1,
+            .progress2,
+            .progress3,
+            .progress4{
+                width: 300px !important;
+                height: 300px !important;
+                h3{
+                    font-size: 20pt;
+                    left: 1%;
+                    span{
+                        font-size: 20pt;
+                    }
+                }
+                h4{
+                    font-size: 22pt;
+                }
+            }
+        }
+    }
+    #About-Me{
+        height: 810px;
+        tbody{
+            tr{
+                td{
+                    padding: 15px;
+                    font-size: 23pt !important;
+                }
+            }
+        }
+        .Me{
+            width: 220px;
+            margin-top: 70px;
+            padding: 15px 10px 10px 10px;
+        }
+    }
+    #Contact{
+        height: 810px;
+        input {
+            width: 100%;
+            font-size: 22pt !important;
+            border: none !important;
+            padding: 7px 35px !important;
+            cursor: pointer;
+            outline: none;
+            background: $Svetlo-ljubicasta ;
+            color: &$Belo-plava !important;
+            border-radius: 2px;
+        }
+        .Contact-Text{
+            font-size: 20pt;
+        }
+    }
+}
+@media only screen and (min-width: 426px) and (max-width:500px){
+    #hed{
+        height: 375px;
+    }
+    .Menu-Ul {
+        height: 120px;
+        ul{
+            a {
+                font-size: 14pt;
+            }
+            li {
+                padding: 10px 5px 5px 5px;
+            }
+        }
+	}
+    .BText {
+        top:45%;
+        padding: 5px;
+        h1 {
+            font-size: 12pt;
+            .cursor-animation{
+                height: 15px;
+                width: 4px;
+            }
+        }
+    }
+    #CV {
+        width: 100px;
+        top: 70% !important;
+        h2 {
+            font-size: 10pt;
+        }
+    }
+    #OCCUPATIONS{
+        height: 900px;
+        #Qualifications{
+            font-size: 13pt;
+        }
+        .OCCU{
+            display: inline;
+            .OCCU1 {
+                width: 90%;
+                margin: 0 auto 20px auto;
+                i{
+                    font-size: 30px;
+                }
+                h2{
+                    font-size: 12pt;
+                }
+                p{
+                    width: 90%;
+                    font-size: 11pt;
+                }
+            }
+        }
+    }
+    #Projects{
+            height: 1225px;
+        img{
+            width: 350px;
+        }
+    }
+    #Skills{
+        height: 525px;
+        .ALLS{
+            .progress1,
+            .progress2,
+            .progress3,
+            .progress4{
+                width: 180px !important;
+                height: 180px !important;
+                h3{
+                    font-size: 13pt !important;
+                    span{
+                        font-size: 13pt !important;
+                    }
+                }
+                h4{
+                    font-size: 14pt !important;
+                }
+            }
+        }
+    }
+    #About-Me{
+        height: 620px;
+        tbody{
+            tr{
+                td{
+                    padding: 5px;
+                    font-size: 11pt !important;
+                }
+            }
+        }
+        .Me{
+            margin-top: 7px;
+            padding: none;
+            img{
+                width: 200px !important;
+            }
+        }
+    }
+    #Contact{
+        height: 730px;
+        .row100{
+            width: 60% !important;
+            input {
+                width: 100%;
+                font-size: 12pt !important;
+                border: none !important;
+                padding: 7px 35px !important;
+                cursor: pointer;
+                outline: none;
+                background: $Svetlo-ljubicasta ;
+                color: &$Belo-plava !important;
+                border-radius: 2px;
+            }
+            .Contact-Text{
+                font-size: 13pt !important;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 401px) and (max-width:425px){
+    #hed{
+        height: 375px;
+    }
+    .Menu-Ul {
+        height: 120px;
+        ul{
+            a {
+                font-size: 14pt;
+            }
+            li {
+                padding: 10px 5px 5px 5px;
+            }
+        }
+	}
+    .BText {
+        top:45%;
+        padding: 5px;
+        h1 {
+            font-size: 12pt;
+            .cursor-animation{
+                height: 15px;
+                width: 4px;
+            }
+        }
+    }
+    #CV {
+        width: 100px;
+        h2 {
+            font-size: 10pt;
+        }
+    }
+    #OCCUPATIONS{
+        height: 1000px;
+        #Qualifications{
+            font-size: 13pt;
+        }
+        .OCCU{
+            display: inline;
+            .OCCU1 {
+                width: 90%;
+                margin: 0 auto 20px auto;
+                i{
+                    font-size: 30px;
+                }
+                h2{
+                    font-size: 12pt;
+                }
+                p{
+                    width: 90%;
+                    font-size: 11pt;
+                }
+            }
+        }
+    }
+    #Projects{
+            height: 1100px;
+        img{
+            width: 300px;
+        }
+    }
+    #Skills{
+        height: 525px;
+        .ALLS{
+            .progress1,
+            .progress2,
+            .progress3,
+            .progress4{
+                width: 160px !important;
+                height: 160px !important;
+                h3{
+                    font-size: 13pt !important;
+                    span{
+                        font-size: 13pt !important;
+                    }
+                }
+                h4{
+                    font-size: 14pt !important;
+                }
+            }
+        }
+    }
+    #About-Me{
+        height: 620px;
+        tbody{
+            tr{
+                td{
+                    padding: 5px;
+                    font-size: 11pt !important;
+                }
+            }
+        }
+        .Me{
+            margin-top: 7px;
+            padding: none;
+            img{
+                width: 200px !important;
+            }
+        }
+    }
+    #Contact{
+        height: 730px;
+        .row100{
+            width: 60% !important;
+            input {
+                width: 100%;
+                font-size: 12pt !important;
+                border: none !important;
+                padding: 7px 35px !important;
+                cursor: pointer;
+                outline: none;
+                background: $Svetlo-ljubicasta ;
+                color: &$Belo-plava !important;
+                border-radius: 2px;
+            }
+            .Contact-Text{
+                font-size: 13pt !important;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 375px) and (max-width:401px){
+    #hed{
+        height: 375px;
+    }
+    .Menu-Ul {
+        height: 120px;
+        ul{
+            a {
+                font-size: 14pt;
+            }
+            li {
+                padding: 10px 5px 5px 5px;
+            }
+        }
+	}
+    .BText {
+        top:45%;
+        padding: 5px;
+        h1 {
+            font-size: 12pt;
+            .cursor-animation{
+                height: 15px;
+                width: 4px;
+            }
+        }
+    }
+    #CV {
+        width: 100px;
+        h2 {
+            font-size: 10pt;
+        }
+    }
+    #OCCUPATIONS{
+        height: 1000px;
+        #Qualifications{
+            font-size: 13pt;
+        }
+        .OCCU{
+            display: inline;
+            .OCCU1 {
+                width: 90%;
+                margin: 0 auto 20px auto;
+                i{
+                    font-size: 30px;
+                }
+                h2{
+                    font-size: 12pt;
+                }
+                p{
+                    width: 90%;
+                    font-size: 11pt;
+                }
+            }
+        }
+    }
+    #Projects{
+            height: 1100px;
+        img{
+            width: 300px;
+        }
+    }
+    #Skills{
+        height: 525px;
+        .ALLS{
+            .progress1,
+            .progress2,
+            .progress3,
+            .progress4{
+                width: 160px !important;
+                height: 160px !important;
+                h3{
+                    font-size: 13pt !important;
+                    span{
+                        font-size: 13pt !important;
+                    }
+                }
+                h4{
+                    font-size: 14pt !important;
+                }
+            }
+        }
+    }
+    #About-Me{
+        height: 620px;
+        tbody{
+            tr{
+                td{
+                    padding: 5px;
+                    font-size: 10.5pt !important;
+                }
+            }
+        }
+        .Me{
+            margin-top: 7px;
+            padding: none;
+            img{
+                width: 180px !important;
+                padding-left: 22px !important;
+            }
+        }
+    }
+    #Contact{
+        height: 730px;
+        .row100{
+            width: 60% !important;
+            input {
+                width: 100%;
+                font-size: 12pt !important;
+                border: none !important;
+                padding: 7px 35px !important;
+                cursor: pointer;
+                outline: none;
+                background: $Svetlo-ljubicasta ;
+                color: &$Belo-plava !important;
+                border-radius: 2px;
+            }
+            .Contact-Text{
+                font-size: 13pt !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 375px) and (min-width:350px){
+    #hed{
+        height: 375px;
+    }
+    .Menu-Ul {
+        height: 120px;
+        ul{
+            a {
+                font-size: 14pt;
+            }
+            li {
+                padding: 10px 5px 5px 5px;
+            }
+        }
+	}
+    .BText {
+        top:45%;
+        padding: 5px;
+        h1 {
+            font-size: 12pt;
+            .cursor-animation{
+                height: 15px;
+                width: 4px;
+            }
+        }
+    }
+    #CV {
+        width: 100px;
+        h2 {
+            font-size: 10pt;
+        }
+    }
+    #OCCUPATIONS{
+        height: 1000px;
+        #Qualifications{
+            font-size: 13pt;
+        }
+        .OCCU{
+            display: inline;
+            .OCCU1 {
+                width: 90%;
+                margin: 0 auto 20px auto;
+                i{
+                    font-size: 30px;
+                }
+                h2{
+                    font-size: 12pt;
+                }
+                p{
+                    width: 90%;
+                    font-size: 11pt;
+                }
+            }
+        }
+    }
+    #Projects{
+            height: 1100px;
+        img{
+            width: 300px;
+        }
+    }
+    #Skills{
+        height: 525px;
+        .ALLS{
+            .progress1,
+            .progress2,
+            .progress3,
+            .progress4{
+                width: 145px !important;
+                height: 145px !important;
+                h3{
+                    font-size: 13pt !important;
+                    span{
+                        font-size: 13pt !important;
+                    }
+                }
+                h4{
+                    font-size: 14pt !important;
+                }
+            }
+        }
+    }
+    #About-Me{
+        height: 620px;
+        tbody{
+            tr{
+                td{
+                    padding: 5px;
+                    font-size: 8pt !important;
+                }
+            }
+        }
+        .Me{
+            margin-top: 7px;
+            padding: none;
+            img{
+                width: 175px !important;
+                padding-left: 20px !important;
+            }
+        }
+    }
+    #Contact{
+        height: 730px;
+        .row100{
+            width: 70% !important;
+            input {
+                width: 100%;
+                font-size: 12pt !important;
+                border: none !important;
+                padding: 7px 35px !important;
+                cursor: pointer;
+                outline: none;
+                background: $Svetlo-ljubicasta ;
+                color: &$Belo-plava !important;
+                border-radius: 2px;
+            }
+            .Contact-Text{
+                font-size: 13pt !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 349px) and (min-width:320px){
+    #hed{
+        height: 375px;
+    }
+    .Menu-Ul {
+        height: 120px;
+        ul{
+            a {
+                font-size: 13pt;
+            }
+            li {
+                padding: 5px 2px 2px 2px;
+            }
+        }
+	}
+    .BText {
+        top:45%;
+        padding: 5px;
+        h1 {
+            font-size: 12pt;
+            .cursor-animation{
+                height: 15px;
+                width: 4px;
+            }
+        }
+    }
+    #CV {
+        width: 100px;
+        h2 {
+            font-size: 10pt;
+        }
+    }
+    #OCCUPATIONS{
+        height: 1000px;
+        #Qualifications{
+            font-size: 13pt;
+        }
+        .OCCU{
+            display: inline;
+            .OCCU1 {
+                width: 90%;
+                margin: 0 auto 20px auto;
+                i{
+                    font-size: 28px;
+                }
+                h2{
+                    font-size: 13pt;
+                }
+                p{
+                    width: 95%;
+                    font-size: 10.2pt;
+                }
+            }
+        }
+    }
+    #Projects{
+            height: 1050px;
+        img{
+            width: 270px;
+        }
+    }
+    #Skills{
+        height: 450px;
+        .ALLS{
+            .progress1,
+            .progress2,
+            .progress3,
+            .progress4{
+                width: 130px !important;
+                height: 130px !important;
+                h3{
+                    font-size: 12pt !important;
+                    span{
+                        font-size: 12pt !important;
+                    }
+                }
+                h4{
+                    font-size: 13pt !important;
+                }
+            }
+        }
+    }
+    #About-Me{
+        height: 500px;
+        tbody{
+            tr{
+                td{
+                    padding: 5px;
+                    font-size: 7pt !important;
+                }
+            }
+        }
+        .Me{
+            margin-top: 7px;
+            padding: none;
+            img{
+                margin-top: 5px !important;
+                width: 160px !important;
+                padding-left: 20px !important;
+            }
+        }
+    }
+    #Contact{
+        height: 730px;
+        .Contact-holder{
+            padding-top: 1px;
+            .row100{
+                width: 70% !important;
+                input {
+                    width: 100%;
+                    font-size: 12pt !important;
+                    border: none !important;
+                    padding: 7px 35px !important;
+                    cursor: pointer;
+                    outline: none;
+                    background: $Svetlo-ljubicasta ;
+                    color: &$Belo-plava !important;
+                    border-radius: 2px;
+                }
+                .Contact-Text{
+                    font-size: 13pt !important;
+                }
+            }
+        }
+    }
+}
