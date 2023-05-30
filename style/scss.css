@@ -687,7 +687,7 @@ footer .footer-col a:hover {
     height: 768px;
   }
   .Menu-Ul a {
-    font-size: 20pt;
+    font-size: 17pt !important;
   }
   .Menu-Ul li {
     padding: 30px 10px 10px 10px;
@@ -714,14 +714,14 @@ footer .footer-col a:hover {
     width: 29%;
   }
   #OCCUPATIONS .OCCU1 i {
-    font-size: 55px;
+    font-size: 45px;
   }
   #OCCUPATIONS .OCCU1 h2 {
-    font-size: 19pt;
+    font-size: 17pt;
   }
   #OCCUPATIONS .OCCU1 p {
     width: 90%;
-    font-size: 17pt;
+    font-size: 14pt;
   }
   #CV {
     width: 24%;
@@ -1388,7 +1388,7 @@ footer .footer-col a:hover {
     font-size: 10pt;
   }
   #OCCUPATIONS {
-    height: 1000px;
+    height: 1050px;
   }
   #OCCUPATIONS #Qualifications {
     font-size: 13pt;
@@ -1415,6 +1415,9 @@ footer .footer-col a:hover {
   }
   #Projects img {
     width: 300px;
+  }
+  #Projects .image-text {
+    font-size: 12pt;
   }
   #Skills {
     height: 525px;
@@ -1511,7 +1514,7 @@ footer .footer-col a:hover {
     font-size: 10pt;
   }
   #OCCUPATIONS {
-    height: 1000px;
+    height: 1080px !important;
   }
   #OCCUPATIONS #Qualifications {
     font-size: 13pt;
@@ -1538,6 +1541,9 @@ footer .footer-col a:hover {
   }
   #Projects img {
     width: 270px;
+  }
+  #Projects .image-text {
+    font-size: 12pt;
   }
   #Skills {
     height: 450px;

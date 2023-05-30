@@ -671,7 +671,7 @@ footer{
     }
 	.Menu-Ul {
 		a {
-			font-size: 20pt;
+			font-size: 17pt !important;
 		}
         li {
             padding: 30px 10px 10px 10px;
@@ -700,14 +700,14 @@ footer{
         .OCCU1 {
             width: 29%;
             i{
-                font-size: 55px;
+                font-size: 45px;
             }
             h2{
-                font-size: 19pt;
+                font-size: 17pt;
             }
             p{
                 width: 90%;
-                font-size: 17pt;
+                font-size: 14pt;
             }
         }
     }
@@ -1386,7 +1386,7 @@ footer{
         }
     }
     #OCCUPATIONS{
-        height: 1000px;
+        height: 1050px;
         #Qualifications{
             font-size: 13pt;
         }
@@ -1412,6 +1412,9 @@ footer{
             height: 1100px;
         img{
             width: 300px;
+        }
+        .image-text {
+            font-size: 12pt;
         }
     }
     #Skills{
@@ -1508,7 +1511,7 @@ footer{
         }
     }
     #OCCUPATIONS{
-        height: 1000px;
+        height: 1080px !important;
         #Qualifications{
             font-size: 13pt;
         }
@@ -1534,6 +1537,9 @@ footer{
             height: 1050px;
         img{
             width: 270px;
+        }
+        .image-text {
+            font-size: 12pt;
         }
     }
     #Skills{
