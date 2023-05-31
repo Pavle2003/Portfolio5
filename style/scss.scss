@@ -36,6 +36,8 @@ $Svetlo-ljubicasta: blueviolet;
 	padding: 0px;
 	margin: 0px;
     box-sizing: border-box;
+    font-family: 'Za-Sve';
+    font-family: 'Mukta', sans-serif;
 }
 body{
     background-color: #121d31;
@@ -122,6 +124,7 @@ header {
 		font-size: 22pt;
 		font-weight: bold;
 		text-align: center;
+        font-family: 'Poppins', sans-serif;
 	}
 }
 .typing-animation {
@@ -137,7 +140,7 @@ header {
 	display: inline-block;
 	vertical-align: bottom;
 	width: 10px;
-	height: 30px;
+	height: 32px;
 	background-color: $crna;
 	margin-left: 5px;
 	animation: blink 0.7s infinite;
@@ -536,6 +539,10 @@ footer{
             background: $Svetlo-ljubicasta ;
             color: &$Belo-plava !important;
             border-radius: 2px;
+            transition: 0.5s;
+        }
+        input:hover{
+            letter-spacing: 0.25em;
         }
     }
 }
@@ -636,6 +643,19 @@ footer{
             color: &$Belo-plava !important;
             border-radius: 2px;
         }
+        input:hover{
+            letter-spacing: 0.25em;
+        }
+    }
+    .footer-col {
+            p {
+                font-size: 14pt !important;
+                padding-bottom: 10px;
+            }
+            a {
+                font-size: 30px !important;
+                margin: 0 10px;
+            }
     }
 }
 @media screen and (max-width: 1115px) {
@@ -662,6 +682,10 @@ footer{
             background: $Svetlo-ljubicasta ;
             color: &$Belo-plava !important;
             border-radius: 2px;
+            transition: 0.5s;
+        }
+        input:hover{
+            letter-spacing: 0.25em;
         }
     }
 }
@@ -748,6 +772,10 @@ footer{
             background: $Svetlo-ljubicasta ;
             color: &$Belo-plava !important;
             border-radius: 2px;
+            transition: 0.5s;
+        }
+        input:hover{
+            letter-spacing: 0.25em;
         }
     }
 }
@@ -873,19 +901,41 @@ footer{
     }
     #Contact{
         height: 1080px;
-        input {
-            width: 100%;
-            font-size: 26pt !important;
-            border: none !important;
-            padding: 7px 35px !important;
-            cursor: pointer;
-            outline: none;
-            background: $Svetlo-ljubicasta ;
-            color: &$Belo-plava !important;
-            border-radius: 2px;
+        .row100{
+            width: 40% !important;
+            .inputBox{
+                height: 60px !important;
+            }
+                input {
+                    width: 100%;
+                    font-size: 26pt !important;
+                    border: none !important;
+                    padding: 7px 35px !important;
+                    cursor: pointer;
+                    outline: none;
+                    background: $Svetlo-ljubicasta ;
+                    color: &$Belo-plava !important;
+                    border-radius: 2px;
+                    transition: 0.5s;
+                }
+            input:hover{
+                letter-spacing: 0.25em;
+            }
+            .Contact-Text{
+                font-size: 25pt !important;
+            }
         }
-        .Contact-Text{
-            font-size: 25pt !important;
+    }
+    footer{
+        .footer-col {
+            p {
+                font-size: 17pt !important;
+                padding-bottom: 10px;
+            }
+            a {
+                font-size: 40px !important;
+                margin: 0 10px;
+            }
         }
     }
 }
@@ -982,6 +1032,10 @@ footer{
             background: $Svetlo-ljubicasta ;
             color: &$Belo-plava !important;
             border-radius: 2px;
+            transition: 0.5s;
+        }
+        input:hover{
+            letter-spacing: 0.25em;
         }
         .Contact-Text{
             font-size: 20pt;
@@ -1103,6 +1157,10 @@ footer{
                 background: $Svetlo-ljubicasta ;
                 color: &$Belo-plava !important;
                 border-radius: 2px;
+                transition: 0.5s;
+            }
+            input:hover{
+                letter-spacing: 0.25em;
             }
             .Contact-Text{
                 font-size: 13pt !important;
@@ -1224,6 +1282,10 @@ footer{
                 background: $Svetlo-ljubicasta ;
                 color: &$Belo-plava !important;
                 border-radius: 2px;
+                transition: 0.5s;
+            }
+            input:hover{
+                letter-spacing: 0.25em;
             }
             .Contact-Text{
                 font-size: 13pt !important;
@@ -1346,6 +1408,10 @@ footer{
                 background: $Svetlo-ljubicasta ;
                 color: &$Belo-plava !important;
                 border-radius: 2px;
+                transition: 0.5s;
+            }
+            input:hover{
+                letter-spacing: 0.25em;
             }
             .Contact-Text{
                 font-size: 13pt !important;
@@ -1471,6 +1537,10 @@ footer{
                 background: $Svetlo-ljubicasta ;
                 color: &$Belo-plava !important;
                 border-radius: 2px;
+                transition: 0.5s;
+            }
+            input:hover{
+                letter-spacing: 0.25em;
             }
             .Contact-Text{
                 font-size: 13pt !important;
@@ -1599,6 +1669,10 @@ footer{
                     background: $Svetlo-ljubicasta ;
                     color: &$Belo-plava !important;
                     border-radius: 2px;
+                    transition: 0.5s;
+                }
+                input:hover{
+                    letter-spacing: 0.25em;
                 }
                 .Contact-Text{
                     font-size: 13pt !important;
@@ -1606,4 +1680,35 @@ footer{
             }
         }
     }
+    .footer-col {
+            p {
+                font-size: 12px !important;
+            }
+            a {
+                font-size: 22px !important;
+            }
+    }
+}
+
+@media only screen and (height:900px){
+    .BText {
+        top: 40%; 
+    }
+    #OCCUPATIONS{
+        height: 820px;
+    }
+}
+@media only screen and (height:800px){
+    .BText {
+        top: 42% !important; 
+    }
+    #OCCUPATIONS{
+        height: 820px;
+    }
+}
+@media only screen and (min-height:400px) and (max-height:500px){
+    .BText {
+        top: 35% !important; 
+    }
+    
 }

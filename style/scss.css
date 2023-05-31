@@ -29,6 +29,8 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  font-family: "Za-Sve";
+  font-family: "Mukta", sans-serif;
 }
 
 body {
@@ -122,6 +124,7 @@ header {
   font-size: 22pt;
   font-weight: bold;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .typing-animation {
@@ -138,7 +141,7 @@ header {
   display: inline-block;
   vertical-align: bottom;
   width: 10px;
-  height: 30px;
+  height: 32px;
   background-color: black;
   margin-left: 5px;
   animation: blink 0.7s infinite;
@@ -563,6 +566,10 @@ footer .footer-col a:hover {
     background: blueviolet;
     color: #Contact input aliceblue !important;
     border-radius: 2px;
+    transition: 0.5s;
+  }
+  #Contact input:hover {
+    letter-spacing: 0.25em;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -658,6 +665,17 @@ footer .footer-col a:hover {
     color: #Contact input aliceblue !important;
     border-radius: 2px;
   }
+  #Contact input:hover {
+    letter-spacing: 0.25em;
+  }
+  .footer-col p {
+    font-size: 14pt !important;
+    padding-bottom: 10px;
+  }
+  .footer-col a {
+    font-size: 30px !important;
+    margin: 0 10px;
+  }
 }
 @media screen and (max-width: 1115px) {
   #Skills {
@@ -680,6 +698,10 @@ footer .footer-col a:hover {
     background: blueviolet;
     color: #Contact input aliceblue !important;
     border-radius: 2px;
+    transition: 0.5s;
+  }
+  #Contact input:hover {
+    letter-spacing: 0.25em;
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 700px) {
@@ -753,6 +775,10 @@ footer .footer-col a:hover {
     background: blueviolet;
     color: #Contact input aliceblue !important;
     border-radius: 2px;
+    transition: 0.5s;
+  }
+  #Contact input:hover {
+    letter-spacing: 0.25em;
   }
 }
 @media only screen and (min-width: 1700px) and (max-width: 1950px) {
@@ -872,7 +898,13 @@ footer .footer-col a:hover {
   #Contact {
     height: 1080px;
   }
-  #Contact input {
+  #Contact .row100 {
+    width: 40% !important;
+  }
+  #Contact .row100 .inputBox {
+    height: 60px !important;
+  }
+  #Contact .row100 input {
     width: 100%;
     font-size: 26pt !important;
     border: none !important;
@@ -880,11 +912,23 @@ footer .footer-col a:hover {
     cursor: pointer;
     outline: none;
     background: blueviolet;
-    color: #Contact input aliceblue !important;
+    color: #Contact .row100 input aliceblue !important;
     border-radius: 2px;
+    transition: 0.5s;
   }
-  #Contact .Contact-Text {
+  #Contact .row100 input:hover {
+    letter-spacing: 0.25em;
+  }
+  #Contact .row100 .Contact-Text {
     font-size: 25pt !important;
+  }
+  footer .footer-col p {
+    font-size: 17pt !important;
+    padding-bottom: 10px;
+  }
+  footer .footer-col a {
+    font-size: 40px !important;
+    margin: 0 10px;
   }
 }
 @media only screen and (min-width: 1442px) and (max-width: 1699px) {
@@ -984,6 +1028,10 @@ footer .footer-col a:hover {
     background: blueviolet;
     color: #Contact input aliceblue !important;
     border-radius: 2px;
+    transition: 0.5s;
+  }
+  #Contact input:hover {
+    letter-spacing: 0.25em;
   }
   #Contact .Contact-Text {
     font-size: 20pt;
@@ -1107,6 +1155,10 @@ footer .footer-col a:hover {
     background: blueviolet;
     color: #Contact .row100 input aliceblue !important;
     border-radius: 2px;
+    transition: 0.5s;
+  }
+  #Contact .row100 input:hover {
+    letter-spacing: 0.25em;
   }
   #Contact .row100 .Contact-Text {
     font-size: 13pt !important;
@@ -1229,6 +1281,10 @@ footer .footer-col a:hover {
     background: blueviolet;
     color: #Contact .row100 input aliceblue !important;
     border-radius: 2px;
+    transition: 0.5s;
+  }
+  #Contact .row100 input:hover {
+    letter-spacing: 0.25em;
   }
   #Contact .row100 .Contact-Text {
     font-size: 13pt !important;
@@ -1352,6 +1408,10 @@ footer .footer-col a:hover {
     background: blueviolet;
     color: #Contact .row100 input aliceblue !important;
     border-radius: 2px;
+    transition: 0.5s;
+  }
+  #Contact .row100 input:hover {
+    letter-spacing: 0.25em;
   }
   #Contact .row100 .Contact-Text {
     font-size: 13pt !important;
@@ -1478,6 +1538,10 @@ footer .footer-col a:hover {
     background: blueviolet;
     color: #Contact .row100 input aliceblue !important;
     border-radius: 2px;
+    transition: 0.5s;
+  }
+  #Contact .row100 input:hover {
+    letter-spacing: 0.25em;
   }
   #Contact .row100 .Contact-Text {
     font-size: 13pt !important;
@@ -1608,8 +1672,39 @@ footer .footer-col a:hover {
     background: blueviolet;
     color: #Contact .Contact-holder .row100 input aliceblue !important;
     border-radius: 2px;
+    transition: 0.5s;
+  }
+  #Contact .Contact-holder .row100 input:hover {
+    letter-spacing: 0.25em;
   }
   #Contact .Contact-holder .row100 .Contact-Text {
     font-size: 13pt !important;
+  }
+  .footer-col p {
+    font-size: 12px !important;
+  }
+  .footer-col a {
+    font-size: 22px !important;
+  }
+}
+@media only screen and (height: 900px) {
+  .BText {
+    top: 40%;
+  }
+  #OCCUPATIONS {
+    height: 820px;
+  }
+}
+@media only screen and (height: 800px) {
+  .BText {
+    top: 42% !important;
+  }
+  #OCCUPATIONS {
+    height: 820px;
+  }
+}
+@media only screen and (min-height: 400px) and (max-height: 500px) {
+  .BText {
+    top: 35% !important;
   }
 }/*# sourceMappingURL=scss.css.map */
